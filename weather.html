@@ -33,9 +33,9 @@
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>conocebogota@example.com</p>
+                        <p><i class="fa fa-envelope mr-2"></i>info@conocebogota.com</p>
                         <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+57 123 456 7890</p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
@@ -104,32 +104,77 @@
     <!-- Header End -->
 
     <!-- Clima Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
-                    </div>
+<div class="container-fluid py-5">
+    <div class="container pt-5">
+        <div class="text-center mb-5">
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Información Climática</h6>
+            <h1>Clima en Bogotá</h1>
+            <p class="text-muted">Actualizado en tiempo real para tu comodidad</p>
+        </div>
+
+        <!-- Tarjeta de Clima -->
+        <div class="row align-items-center bg-white shadow-lg rounded-lg overflow-hidden">
+            <!-- Sección izquierda: Información general -->
+            <div class="col-lg-6 p-5">
+                <h3 class="mb-4">Clima típico de Bogotá</h3>
+                <p class="text-justify">
+                    Bogotá, ubicada a 2,640 metros sobre el nivel del mar, tiene un clima frío de montaña tropical. 
+                    Las temperaturas oscilan entre <strong>6°C y 19°C</strong> durante el año, con lluvias frecuentes 
+                    y mañanas soleadas que pueden cambiar rápidamente. ¡Siempre lleva un abrigo!
+                </p>
+                
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-3">
+                        <i class="fas fa-sun text-warning mr-2"></i>
+                        <strong>Temporada seca:</strong> Diciembre a marzo (días soleados, noches frías).
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-cloud-rain text-primary mr-2"></i>
+                        <strong>Temporada de lluvias:</strong> Abril a mayo y septiembre a noviembre (lluvias por las tardes).
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-temperature-low text-info mr-2"></i>
+                        <strong>Recomendación:</strong> Usa el sistema de capas ("cebolla") para adaptarte a los cambios bruscos.
+                    </li>
+                </ul>
+
+                <!-- Espacio para tips adicionales -->
+                <div class="alert alert-primary mt-4">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    <strong>¿Sabías qué?</strong> En Bogotá puedes experimentar las "4 estaciones" en un solo día.
                 </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Clima en Bogotá</h6>
-                        <h1 class="mb-3">¿Cómo es el clima en Bogotá?</h1>
-                        <p>En esta sección encontrarás información sobre el clima actual de Bogotá, recomendaciones para tu visita según la temporada y consejos para disfrutar la ciudad sin importar el clima.</p>
-                        <ul>
-                            <li>Temperatura promedio anual: 14°C</li>
-                            <li>Épocas de lluvia: abril-mayo y octubre-noviembre</li>
-                            <li>Recomendación: Lleva siempre una chaqueta ligera y paraguas</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary mt-1">Ver pronóstico actual</a>
+            </div>
+
+            <!-- Sección derecha: Clima actual (API) -->
+            <div class="col-lg-6 p-0">
+                <div class="p-5 text-center" style="min-height: 100%; background-color: #ffffff;">
+                    <h4 class="mb-4">Clima Actual</h4>
+                    
+                    <!-- Widget de API (ej: OpenWeatherMap) -->
+                    <div id="weather-widget" class="mb-4">
+                        <!-- Esto se llenará dinámicamente con JavaScript -->
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Icono clima" class="img-fluid mb-3" style="width: 100px;">
+                        <h2 class="display-4 mb-2">18°C</h2>
+                        <p class="text-muted mb-1">Parcialmente nublado</p>
+                        <small class="text-muted">Humedad: 65% | Viento: 10 km/h</small>
+                    </div>
+
+                    <!-- Botón para actualizar (opcional) -->
+                    <button id="refresh-weather" class="btn btn-outline-primary">
+                        <i class="fas fa-sync-alt mr-2"></i> Actualizar
+                    </button>
+
+                    <!-- Mensaje para móviles -->
+                    <div class="mt-4 d-lg-none">
+                        <p class="text-muted"><small>Desliza para ver pronóstico extendido →</small></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Clima End -->
-
+</div>
+<!-- Clima End -->
+    
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
         <div class="row pt-5">
@@ -191,7 +236,7 @@
                 <p class="m-0 text-white-50">Copyright &copy; <a href="#">ConoceBogotá</a>. Todos los derechos reservados.</p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Diseñado por <a href="#">Tu Nombre</a></p>
+                <p class="m-0 text-white-50">Diseñado por <a href="#">Neil Rangel, Riccardo Fusco y Diego Abreu.</a></p>
             </div>
         </div>
     </div>

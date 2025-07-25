@@ -9596,6 +9596,19 @@ h6,
   transition: .5s;
   z-index: 1;
 }
+.destination-item:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+/* Animación para los iconos de Features */
+.d-flex.flex-shrink-0.align-items-center.justify-content-center.bg-primary.mr-3 i {
+  transition: transform 0.3s ease;
+}
+
+.d-flex.flex-shrink-0.align-items-center.justify-content-center.bg-primary.mr-3:hover i {
+  transform: scale(1.2); /* Aumenta el tamaño en un 20% */
+}
 
 .destination-item:hover .destination-overlay {
   top: 0px;
