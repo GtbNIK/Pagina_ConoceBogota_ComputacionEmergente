@@ -1,0 +1,90 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola",
+        "buenos días",
+        "buenas tardes",
+        "hey",
+        "saludos",
+        "hi",
+        "hello"
+      ],
+      "responses": [
+        "¡Hola! 👋 Soy tu guía turístico inteligente de Bogotá. ¿En qué te puedo ayudar hoy?",
+        "¡Bienvenido! 🌟 Estoy aquí para ayudarte a descubrir lo mejor de Bogotá."
+      ]
+    },
+    {
+      "tag": "clima_actual",
+      "patterns": [
+        "¿qué clima hace hoy?",
+        "clima actual",
+        "temperatura hoy",
+        "¿va a llover hoy?",
+        "¿cómo está el clima?",
+        "pronóstico del tiempo",
+        "¿qué temperatura hace?",
+        "clima bogotá",
+        "tiempo hoy",
+        "¿necesito paraguas?",
+        "¿debo llevar abrigo?"
+      ],
+      "responses": [
+        "Te voy a consultar el clima actual de Bogotá..."
+      ]
+    },
+    {
+      "tag": "lugares_turisticos",
+      "patterns": [
+        "¿qué lugares puedo visitar?",
+        "sitios turísticos",
+        "lugares para visitar",
+        "¿qué ver en bogotá?",
+        "recomendaciones turísticas",
+        "atracciones",
+        "museos",
+        "parques",
+        "monumentos",
+        "que hacer en bogota"
+      ],
+      "responses": [
+        "🏛️ **Lugares imperdibles en Bogotá:**\n• Monserrate\n• Museo del Oro\n• La Candelaria\n• Jardín Botánico\n• Museo Nacional\n• Parque Simón Bolívar"
+      ]
+    },
+    {
+      "tag": "restaurantes",
+      "patterns": [
+        "¿dónde puedo comer?",
+        "restaurantes",
+        "comida típica",
+        "ajiaco",
+        "¿dónde comer bien?",
+        "gastronomía",
+        "platos típicos",
+        "comida bogotana"
+      ],
+      "responses": [
+        "🍽️ **Restaurantes recomendados en Bogotá:**\n• Andrés Carne de Res\n• La Puerta Falsa (ajiaco tradicional)\n• El Chato\n• Criterion\n• Casa San Isidro"
+      ]
+    },
+    {
+      "tag": "transporte",
+      "patterns": [
+        "¿cómo me muevo?",
+        "transporte",
+        "transmilenio",
+        "uber",
+        "taxi",
+        "¿cómo llegar?",
+        "movilidad",
+        "metro",
+        "bus"
+      ],
+      "responses": [
+        "🚌 **Opciones de transporte en Bogotá:**\n• TransMilenio (sistema BRT)\n• SITP (buses urbanos)\n• Uber/Taxi\n• Bicicletas públicas\n• Metro (en construcción)"
+      ]
+    }
+  ]
+}
